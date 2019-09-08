@@ -16,15 +16,24 @@ namespace SIMAkademik
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+            //            "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Content/bootstrap/js/bootstrap.min.js",
+                      "~/Content/plugins/datatables/jquery.dataTables.min.js",
+                      "~/Content/plugins/datatables/dataTables.bootstrap.min.js",
+                      "~/Content/plugins/fastclick/fastclick.js",
+                      "~/Content/dist/js/app.min.js"
+                      ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/bootstrap/css/bootstrap.min.css",
+                      "~/Content/plugins/datatables/dataTables.bootstrap.css",
+                      "~/Content/dist/css/AdminLTE.min.css",
+                      "~/Content/dist/css/skins/_all-skins.css",
+                      "~/Content/plugins/iCheck/flat/blue.css"
+                      ));
         }
     }
 }
