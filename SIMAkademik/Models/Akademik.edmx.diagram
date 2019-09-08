@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="65da48e3100d4700b5bbe45f03b8844c" Name="Diagram1">
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_AGAMA" Width="1.5" PointX="3.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_DESA" Width="1.5" PointX="15.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_DOSEN" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_FAKULTAS" Width="1.5" PointX="8.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_GOLDAR" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_JURUSAN" Width="1.5" PointX="11" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_KARYAWAN" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_KECAMATAN" Width="1.5" PointX="13.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_KMTK" Width="1.5" PointX="11" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_KOTA" Width="1.5" PointX="11" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_MATAKULIAH" Width="1.5" PointX="13.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_PROVINSI" Width="1.5" PointX="8.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_SEX" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_DOSEN_TBLM_AGAMA" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_KARYAWAN_TBLM_AGAMA" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_DESA_TBLM_KECAMATAN" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_DOSEN_TBLM_SEX" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_JURUSAN_TBLM_FAKULTAS" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MATAKULIAH_TBLM_JURUSAN" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_KARYAWAN_TBLM_SEX" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_KECAMATAN_TBLM_KOTA" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MATAKULIAH_TBLM_KMTK" ManuallyRouted="false" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_KOTA_TBLM_PROVINSI" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_NEGARA" Width="1.5" PointX="4.125" PointY="16.75" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_PROGRAM" Width="1.5" PointX="4.125" PointY="0.75" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_SATUSMAHASISWA" Width="1.5" PointX="4.125" PointY="14.5" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_STATUSSIPIL" Width="1.5" PointX="4.125" PointY="12.125" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_WARGANEGARA" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="AKADEMIKModel.TBLM_MAHASISWA" Width="1.5" PointX="17.75" PointY="3.5" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_AGAMA" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_DESA" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_NEGARA" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_PROGRAM" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_SATUSMAHASISWA" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_SEX" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_STATUSSIPIL" />
+        <AssociationConnector Association="AKADEMIKModel.FK_TBLM_MAHASISWA_TBLM_WARGANEGARA" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

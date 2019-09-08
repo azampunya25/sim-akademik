@@ -1,0 +1,322 @@
+﻿@model IEnumerable<SIMAkademik.Models.TBLM_MAHASISWA>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NIK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOPENDAFTARAN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAMALENGKAP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TEMPATLAHIR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TANGGALLAHIR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELEPON)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ALAMAT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RW)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TGLSSTBSD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNMASUKSD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNKELUARSD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TLGSSTBSMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNMASUKSMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNKELUARSMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TGLSSTBSMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNMASUKSMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THNKELUARSMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JURUSANSMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAMAYAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TEMPATLAHIRAYAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TANGGALLAHIRAYAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ALAMATAYAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PEKERJAANAYAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAMAIBU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TEMPATLAHIRIBU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TANGGALLAHIRIBU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ALAMATIBU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FILENAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONTENTTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATEDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATEDBY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UPDATEDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UPDATEDBY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_AGAMA.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_DESA.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_NEGARA.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_PROGRAM.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_SATUSMAHASISWA.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_SEX.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_STATUSSIPIL.NAMA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBLM_WARGANEGARA.NAMA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NIK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOPENDAFTARAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAMALENGKAP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAMAPANGGILAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEMPATLAHIR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TANGGALLAHIR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELEPON)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ALAMAT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RW)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TGLSSTBSD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNMASUKSD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNKELUARSD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TLGSSTBSMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNMASUKSMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNKELUARSMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TGLSSTBSMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNMASUKSMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THNKELUARSMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JURUSANSMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAMAYAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEMPATLAHIRAYAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TANGGALLAHIRAYAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ALAMATAYAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PEKERJAANAYAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAMAIBU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEMPATLAHIRIBU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TANGGALLAHIRIBU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ALAMATIBU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FILENAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CONTENTTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATEDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATEDBY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPDATEDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPDATEDBY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_AGAMA.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_DESA.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_NEGARA.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_PROGRAM.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_SATUSMAHASISWA.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_SEX.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_STATUSSIPIL.NAMA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBLM_WARGANEGARA.NAMA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NIM }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NIM }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NIM })
+        </td>
+    </tr>
+}
+
+</table>
