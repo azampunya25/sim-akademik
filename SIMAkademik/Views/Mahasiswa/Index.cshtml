@@ -17,69 +17,77 @@
             <a href=@Url.Action("Create") class="btn btn-default btn-sm"><span class="fa fa-plus"> Create New</span></a>
         </p>
         <table id="ctbl" class="table  table-hover table-bordered table-striped">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NIK)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NOPENDAFTARAN)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NAMALENGKAP)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TEMPATLAHIR)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TANGGALLAHIR)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.HP)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.EMAIL)
-                </th>
-                <th></th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
+            <thead>
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NIK)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NOPENDAFTARAN)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NAMALENGKAP)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NAMAPANGGILAN)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TEMPATLAHIR)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TANGGALLAHIR)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HP)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EMAIL)
-                    </td>
-                    <td>
-                        <a href=@Url.Action("Edit", new { id = item.NIM }) class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href=@Url.Action("Details", new { id = item.NIM }) class="btn btn-microsoft btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href=@Url.Action("Delete", new { id = item.NIM }) class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a>
-                    </td>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NIM)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NIK)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NOPENDAFTARAN)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NAMALENGKAP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TEMPATLAHIR)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TANGGALLAHIR)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EMAIL)
+                    </th>
+                    <th></th>
                 </tr>
-            }
-
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NIM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NIK)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NOPENDAFTARAN)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NAMALENGKAP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NAMAPANGGILAN)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TEMPATLAHIR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TANGGALLAHIR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EMAIL)
+                        </td>
+                        <td>
+                            <a href=@Url.Action("Edit", new { id = item.NIM }) class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                            <a href=@Url.Action("Details", new { id = item.NIM }) class="btn btn-microsoft btn-sm"><i class="fa fa-edit"></i></a>
+                            <a href=@Url.Action("Delete", new { id = item.NIM }) class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
         </table>
     </div>
 </div>
@@ -224,24 +232,24 @@
         </table>
     </div>*@
 
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            Features
-        </h3>
-    </div>
-    <div class="panel-body">
-        <ul>
-            <li>Very customizable</li>
-            <li>Works with Bootstrap's native form examples</li>
-            <li>Uses CSS transitions for fallback browser support</li>
-            <li>Placeholder override for labels when fields are empty</li>
-            <li>Included authored jQuery plugin</li>
-            <li>Optional bottom label positioning with the <code>.label-bottom</code> utility</li>
-            <li>Works great with Chrome's AutoComplete</li>
-        </ul>
-    </div>
-</div>
+@*<div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                Features
+            </h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Very customizable</li>
+                <li>Works with Bootstrap's native form examples</li>
+                <li>Uses CSS transitions for fallback browser support</li>
+                <li>Placeholder override for labels when fields are empty</li>
+                <li>Included authored jQuery plugin</li>
+                <li>Optional bottom label positioning with the <code>.label-bottom</code> utility</li>
+                <li>Works great with Chrome's AutoComplete</li>
+            </ul>
+        </div>
+    </div>*@
 
 @Scripts.Render("~/bundles/jquery")
 

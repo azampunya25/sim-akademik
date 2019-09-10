@@ -5,413 +5,122 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Delete</h2>
-
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>TBLM_MAHASISWA</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NIK)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NIK)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NOPENDAFTARAN)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NOPENDAFTARAN)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NAMALENGKAP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NAMALENGKAP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NAMAPANGGILAN)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TEMPATLAHIR)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TEMPATLAHIR)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TANGGALLAHIR)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TANGGALLAHIR)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.HP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.HP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EMAIL)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EMAIL)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TELEPON)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TELEPON)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ALAMAT)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ALAMAT)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RT)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RT)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RW)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RW)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SD)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SD)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TGLSSTBSD)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TGLSSTBSD)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNMASUKSD)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNMASUKSD)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNKELUARSD)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNKELUARSD)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SMP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SMP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TLGSSTBSMP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TLGSSTBSMP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNMASUKSMP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNMASUKSMP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNKELUARSMP)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNKELUARSMP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TGLSSTBSMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TGLSSTBSMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNMASUKSMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNMASUKSMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.THNKELUARSMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.THNKELUARSMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.JURUSANSMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.JURUSANSMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NAMAYAH)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NAMAYAH)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TEMPATLAHIRAYAH)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TEMPATLAHIRAYAH)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TANGGALLAHIRAYAH)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TANGGALLAHIRAYAH)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ALAMATAYAH)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ALAMATAYAH)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PEKERJAANAYAH)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PEKERJAANAYAH)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NAMAIBU)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NAMAIBU)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TEMPATLAHIRIBU)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TEMPATLAHIRIBU)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TANGGALLAHIRIBU)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TANGGALLAHIRIBU)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ALAMATIBU)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ALAMATIBU)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.FILENAME)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FILENAME)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CONTENTTYPE)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CONTENTTYPE)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DATA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DATA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CREATEDDATE)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CREATEDDATE)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CREATEDBY)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CREATEDBY)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UPDATEDDATE)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UPDATEDDATE)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UPDATEDBY)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UPDATEDBY)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_AGAMA.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_AGAMA.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_DESA.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_DESA.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_NEGARA.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_NEGARA.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_PROGRAM.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_PROGRAM.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_SATUSMAHASISWA.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_SATUSMAHASISWA.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_SEX.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_SEX.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_STATUSSIPIL.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_STATUSSIPIL.NAMA)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TBLM_WARGANEGARA.NAMA)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TBLM_WARGANEGARA.NAMA)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Delete Mahasiswa
+        </h3>
+    </div>
+    <div class="panel-body">
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NIK)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NIK)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NOPENDAFTARAN)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NOPENDAFTARAN)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NAMALENGKAP)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NAMALENGKAP)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NAMAPANGGILAN)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TEMPATLAHIR)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TEMPATLAHIR)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TANGGALLAHIR)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TANGGALLAHIR)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.HP)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HP)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EMAIL)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EMAIL)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TELEPON)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TELEPON)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ALAMAT)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ALAMAT)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.RT)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.RT)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.RW)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.RW)
+                </dd>
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
         </div>
-    }
+    </div>
 </div>
