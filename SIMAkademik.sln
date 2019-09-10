@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMAkademik", "SIMAkademik\SIMAkademik.csproj", "{2440E281-559A-4554-9018-D5745B38C4EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMAkademik.Test", "SIMAkademik.Test\SIMAkademik.Test.csproj", "{64E87247-8E82-41B8-B269-77EAA7ACF302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2440E281-559A-4554-9018-D5745B38C4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2440E281-559A-4554-9018-D5745B38C4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2440E281-559A-4554-9018-D5745B38C4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E87247-8E82-41B8-B269-77EAA7ACF302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E87247-8E82-41B8-B269-77EAA7ACF302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E87247-8E82-41B8-B269-77EAA7ACF302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E87247-8E82-41B8-B269-77EAA7ACF302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

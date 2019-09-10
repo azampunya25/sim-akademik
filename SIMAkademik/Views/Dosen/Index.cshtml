@@ -1,0 +1,136 @@
+﻿@model IEnumerable<SIMAkademik.Models.TBLM_DOSEN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            List Dosen
+        </h3>
+    </div>
+    <div class="panel-body">
+        <p>
+            <a href=@Url.Action("Create") class="btn btn-default btn-sm"><span class="fa fa-plus"> Create New</span></a>
+        </p>
+        <table id="ctbl" class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NIP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NUPTK)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NAMALENGKAP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NAMAPANGGILAN)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TEMPATLAHIR)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TANGGALLAHIR)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ALAMAT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EMAIL)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TELEPON)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FILENAME)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CONTENTTYPE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DATA)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TBLM_AGAMA.NAMA)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TBLM_SEX.NAMA)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NIP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NUPTK)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NAMALENGKAP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NAMAPANGGILAN)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TEMPATLAHIR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TANGGALLAHIR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ALAMAT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EMAIL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TELEPON)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FILENAME)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CONTENTTYPE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DATA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TBLM_AGAMA.NAMA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TBLM_SEX.NAMA)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.IDDOSEN }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.IDDOSEN }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.IDDOSEN })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#ctbl').DataTable();
+    });
+</script>

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\zamzamfa\source\repos\SIMAkademik\SIMAkademik\Models\Akademik.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\SIMAkademik\SIMAkademik\Models\Akademik.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

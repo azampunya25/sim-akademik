@@ -224,6 +224,8 @@
           <Property Name="IDWARGANEGARA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NAMA" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AKADEMIK.dbo.VwDosen' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <Association Name="FK_TBLM_DESA_TBLM_KECAMATAN">
           <End Role="TBLM_KECAMATAN" Type="Self.TBLM_KECAMATAN" Multiplicity="0..1" />
           <End Role="TBLM_DESA" Type="Self.TBLM_DESA" Multiplicity="*" />

@@ -198,7 +198,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DosenController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KaryawanController.cs" />
     <Compile Include="Controllers\MahasiswaController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1317,6 +1319,16 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Karyawan\Create.cshtml" />
+    <Content Include="Views\Karyawan\Delete.cshtml" />
+    <Content Include="Views\Karyawan\Details.cshtml" />
+    <Content Include="Views\Karyawan\Edit.cshtml" />
+    <Content Include="Views\Karyawan\Index.cshtml" />
+    <Content Include="Views\Dosen\Create.cshtml" />
+    <Content Include="Views\Dosen\Delete.cshtml" />
+    <Content Include="Views\Dosen\Details.cshtml" />
+    <Content Include="Views\Dosen\Edit.cshtml" />
+    <Content Include="Views\Dosen\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
