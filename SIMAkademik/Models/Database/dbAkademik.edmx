@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AkademikModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ms_agama">
+          <Key>
+            <PropertyRef Name="kode_agama" />
+          </Key>
+          <Property Name="kode_agama" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="nama_agama" Type="varchar" MaxLength="20" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_desa">
+          <Key>
+            <PropertyRef Name="kode_desa" />
+          </Key>
+          <Property Name="kode_desa" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="kode_kecamatan" Type="char" MaxLength="7" />
+          <Property Name="nama_desa" Type="varchar" MaxLength="255" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_fakultas">
+          <Key>
+            <PropertyRef Name="kode_fakultas" />
+          </Key>
+          <Property Name="kode_fakultas" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="nama_fakultas" Type="varchar" MaxLength="100" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_jenjang_pendidikan">
+          <Key>
+            <PropertyRef Name="kode_jenjang_pendidikan" />
+          </Key>
+          <Property Name="kode_jenjang_pendidikan" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="nama_jenjang_pendidikan" Type="varchar" MaxLength="50" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_jurusan">
+          <Key>
+            <PropertyRef Name="kode_jurusan" />
+          </Key>
+          <Property Name="kode_jurusan" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="kode_fakultas" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="nama_jurusan" Type="varchar" MaxLength="100" />
+          <Property Name="jenjang" Type="char" MaxLength="5" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_Date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_kabupaten">
+          <Key>
+            <PropertyRef Name="kode_kabupaten" />
+          </Key>
+          <Property Name="kode_kabupaten" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="kode_provinsi" Type="char" MaxLength="2" />
+          <Property Name="nama_kabupaten" Type="varchar" MaxLength="255" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_kecamatan">
+          <Key>
+            <PropertyRef Name="kode_kecamatan" />
+          </Key>
+          <Property Name="kode_kecamatan" Type="char" MaxLength="7" Nullable="false" />
+          <Property Name="kode_kabupaten" Type="char" MaxLength="4" />
+          <Property Name="nama_kecamatan" Type="varchar" MaxLength="255" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityType Name="ms_mahasiswa">
+          <Key>
+            <PropertyRef Name="nim" />
+          </Key>
+          <Property Name="nim" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="nama_lengkap" Type="varchar" MaxLength="200" />
+          <Property Name="nama_panggilan" Type="varchar" MaxLength="50" />
+          <Property Name="tempat_lahir" Type="varchar" MaxLength="50" />
+          <Property Name="tanggal_Lahir" Type="date" />
+          <Property Name="kode_agama" Type="char" MaxLength="5" />
+          <Property Name="jenis_kelamin" Type="bit" />
+          <Property Name="kode_sipil" Type="char" MaxLength="5" />
+          <Property Name="kode_warganegara" Type="char" MaxLength="5" />
+          <Property Name="handphone" Type="char" MaxLength="12" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="alamat" Type="varchar" MaxLength="200" />
+          <Property Name="rt" Type="char" MaxLength="3" />
+          <Property Name="rw" Type="char" MaxLength="3" />
+          <Property Name="kode_kota" Type="char" MaxLength="5" />
+          <Property Name="kode_provinsi" Type="char" MaxLength="5" />
+          <Property Name="kode_pos" Type="char" MaxLength="5" />
+          <Property Name="kode_negara" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="ms_provinsi">
+          <Key>
+            <PropertyRef Name="kode_provinsi" />
+          </Key>
+          <Property Name="kode_provinsi" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="nama_provinsi" Type="varchar" MaxLength="255" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="created_by" Type="varchar" MaxLength="50" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by" Type="varchar" MaxLength="50" />
+          <Property Name="is_active" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="AkademikModelStoreContainer">
+          <EntitySet Name="ms_agama" EntityType="Self.ms_agama" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_desa" EntityType="Self.ms_desa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_fakultas" EntityType="Self.ms_fakultas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_jenjang_pendidikan" EntityType="Self.ms_jenjang_pendidikan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_jurusan" EntityType="Self.ms_jurusan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_kabupaten" EntityType="Self.ms_kabupaten" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_kecamatan" EntityType="Self.ms_kecamatan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_mahasiswa" EntityType="Self.ms_mahasiswa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ms_provinsi" EntityType="Self.ms_provinsi" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AkademikModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ms_agama">
+          <Key>
+            <PropertyRef Name="kode_agama" />
+          </Key>
+          <Property Name="kode_agama" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_agama" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_desa">
+          <Key>
+            <PropertyRef Name="kode_desa" />
+          </Key>
+          <Property Name="kode_desa" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="kode_kecamatan" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Name="nama_desa" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_fakultas">
+          <Key>
+            <PropertyRef Name="kode_fakultas" />
+          </Key>
+          <Property Name="kode_fakultas" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_fakultas" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_jenjang_pendidikan">
+          <Key>
+            <PropertyRef Name="kode_jenjang_pendidikan" />
+          </Key>
+          <Property Name="kode_jenjang_pendidikan" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_jenjang_pendidikan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_jurusan">
+          <Key>
+            <PropertyRef Name="kode_jurusan" />
+          </Key>
+          <Property Name="kode_jurusan" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="kode_fakultas" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_jurusan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="jenjang" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_Date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_kabupaten">
+          <Key>
+            <PropertyRef Name="kode_kabupaten" />
+          </Key>
+          <Property Name="kode_kabupaten" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="kode_provinsi" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="nama_kabupaten" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_kecamatan">
+          <Key>
+            <PropertyRef Name="kode_kecamatan" />
+          </Key>
+          <Property Name="kode_kecamatan" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="kode_kabupaten" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="nama_kecamatan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ms_mahasiswa">
+          <Key>
+            <PropertyRef Name="nim" />
+          </Key>
+          <Property Name="nim" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_lengkap" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="nama_panggilan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tempat_lahir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tanggal_Lahir" Type="DateTime" Precision="0" />
+          <Property Name="kode_agama" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="jenis_kelamin" Type="Boolean" />
+          <Property Name="kode_sipil" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="kode_warganegara" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="handphone" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="alamat" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="rt" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="rw" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="kode_kota" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="kode_provinsi" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="kode_pos" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="kode_negara" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ms_provinsi">
+          <Key>
+            <PropertyRef Name="kode_provinsi" />
+          </Key>
+          <Property Name="kode_provinsi" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nama_provinsi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="created_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="is_active" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="AkademikEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ms_agama" EntityType="Self.ms_agama" />
+          <EntitySet Name="ms_desa" EntityType="Self.ms_desa" />
+          <EntitySet Name="ms_fakultas" EntityType="Self.ms_fakultas" />
+          <EntitySet Name="ms_jenjang_pendidikan" EntityType="Self.ms_jenjang_pendidikan" />
+          <EntitySet Name="ms_jurusan" EntityType="Self.ms_jurusan" />
+          <EntitySet Name="ms_kabupaten" EntityType="Self.ms_kabupaten" />
+          <EntitySet Name="ms_kecamatan" EntityType="Self.ms_kecamatan" />
+          <EntitySet Name="ms_mahasiswa" EntityType="Self.ms_mahasiswa" />
+          <EntitySet Name="ms_provinsi" EntityType="Self.ms_provinsi" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AkademikModelStoreContainer" CdmEntityContainer="AkademikEntities">
+          <EntitySetMapping Name="ms_agama">
+            <EntityTypeMapping TypeName="AkademikModel.ms_agama">
+              <MappingFragment StoreEntitySet="ms_agama">
+                <ScalarProperty Name="kode_agama" ColumnName="kode_agama" />
+                <ScalarProperty Name="nama_agama" ColumnName="nama_agama" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_desa">
+            <EntityTypeMapping TypeName="AkademikModel.ms_desa">
+              <MappingFragment StoreEntitySet="ms_desa">
+                <ScalarProperty Name="kode_desa" ColumnName="kode_desa" />
+                <ScalarProperty Name="kode_kecamatan" ColumnName="kode_kecamatan" />
+                <ScalarProperty Name="nama_desa" ColumnName="nama_desa" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_fakultas">
+            <EntityTypeMapping TypeName="AkademikModel.ms_fakultas">
+              <MappingFragment StoreEntitySet="ms_fakultas">
+                <ScalarProperty Name="kode_fakultas" ColumnName="kode_fakultas" />
+                <ScalarProperty Name="nama_fakultas" ColumnName="nama_fakultas" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_jenjang_pendidikan">
+            <EntityTypeMapping TypeName="AkademikModel.ms_jenjang_pendidikan">
+              <MappingFragment StoreEntitySet="ms_jenjang_pendidikan">
+                <ScalarProperty Name="kode_jenjang_pendidikan" ColumnName="kode_jenjang_pendidikan" />
+                <ScalarProperty Name="nama_jenjang_pendidikan" ColumnName="nama_jenjang_pendidikan" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_jurusan">
+            <EntityTypeMapping TypeName="AkademikModel.ms_jurusan">
+              <MappingFragment StoreEntitySet="ms_jurusan">
+                <ScalarProperty Name="kode_jurusan" ColumnName="kode_jurusan" />
+                <ScalarProperty Name="kode_fakultas" ColumnName="kode_fakultas" />
+                <ScalarProperty Name="nama_jurusan" ColumnName="nama_jurusan" />
+                <ScalarProperty Name="jenjang" ColumnName="jenjang" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_Date" ColumnName="updated_Date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_kabupaten">
+            <EntityTypeMapping TypeName="AkademikModel.ms_kabupaten">
+              <MappingFragment StoreEntitySet="ms_kabupaten">
+                <ScalarProperty Name="kode_kabupaten" ColumnName="kode_kabupaten" />
+                <ScalarProperty Name="kode_provinsi" ColumnName="kode_provinsi" />
+                <ScalarProperty Name="nama_kabupaten" ColumnName="nama_kabupaten" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_kecamatan">
+            <EntityTypeMapping TypeName="AkademikModel.ms_kecamatan">
+              <MappingFragment StoreEntitySet="ms_kecamatan">
+                <ScalarProperty Name="kode_kecamatan" ColumnName="kode_kecamatan" />
+                <ScalarProperty Name="kode_kabupaten" ColumnName="kode_kabupaten" />
+                <ScalarProperty Name="nama_kecamatan" ColumnName="nama_kecamatan" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_mahasiswa">
+            <EntityTypeMapping TypeName="AkademikModel.ms_mahasiswa">
+              <MappingFragment StoreEntitySet="ms_mahasiswa">
+                <ScalarProperty Name="nim" ColumnName="nim" />
+                <ScalarProperty Name="nama_lengkap" ColumnName="nama_lengkap" />
+                <ScalarProperty Name="nama_panggilan" ColumnName="nama_panggilan" />
+                <ScalarProperty Name="tempat_lahir" ColumnName="tempat_lahir" />
+                <ScalarProperty Name="tanggal_Lahir" ColumnName="tanggal_Lahir" />
+                <ScalarProperty Name="kode_agama" ColumnName="kode_agama" />
+                <ScalarProperty Name="jenis_kelamin" ColumnName="jenis_kelamin" />
+                <ScalarProperty Name="kode_sipil" ColumnName="kode_sipil" />
+                <ScalarProperty Name="kode_warganegara" ColumnName="kode_warganegara" />
+                <ScalarProperty Name="handphone" ColumnName="handphone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="alamat" ColumnName="alamat" />
+                <ScalarProperty Name="rt" ColumnName="rt" />
+                <ScalarProperty Name="rw" ColumnName="rw" />
+                <ScalarProperty Name="kode_kota" ColumnName="kode_kota" />
+                <ScalarProperty Name="kode_provinsi" ColumnName="kode_provinsi" />
+                <ScalarProperty Name="kode_pos" ColumnName="kode_pos" />
+                <ScalarProperty Name="kode_negara" ColumnName="kode_negara" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ms_provinsi">
+            <EntityTypeMapping TypeName="AkademikModel.ms_provinsi">
+              <MappingFragment StoreEntitySet="ms_provinsi">
+                <ScalarProperty Name="kode_provinsi" ColumnName="kode_provinsi" />
+                <ScalarProperty Name="nama_provinsi" ColumnName="nama_provinsi" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
