@@ -1,5 +1,5 @@
-# SIMAkademik
-Sistem Informasi Akademik
+# sim akademik universitas
+sistem informasi manajemen akademik universitas
 
 <p>Tools yang digunakan adalah</p>
 <ul>
