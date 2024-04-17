@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SIMA.Universitas.Application\SIMA.Universitas.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="2.10.0" />
-    <PackageReference Include="MimeKit" Version="2.10.1" />
+    <PackageReference Include="MailKit" Version="4.5.0" />
+    <PackageReference Include="MimeKit" Version="4.5.0" />
   </ItemGroup>
 </Project>

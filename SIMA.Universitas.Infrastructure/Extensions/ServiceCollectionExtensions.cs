@@ -15,7 +15,7 @@ namespace SIMA.Universitas.Infrastructure.Extensions
     {
         public static void AddPersistenceContexts(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
         }
 
