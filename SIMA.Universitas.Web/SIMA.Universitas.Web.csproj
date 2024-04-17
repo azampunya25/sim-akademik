@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SIMA.Universitas.Infrastructure.Shared\SIMA.Universitas.Shared.csproj" />
+    <ProjectReference Include="..\SIMA.Universitas.Infrastructure.Shared\SIMA.Universitas.Infrastructure.Shared.csproj" />
     <ProjectReference Include="..\SIMA.Universitas.Infrastructure\SIMA.Universitas.Infrastructure.csproj" />
   </ItemGroup>
 

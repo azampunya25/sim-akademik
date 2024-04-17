@@ -1,9 +1,9 @@
-﻿using SIMA.Universitas.Application.Features.Brands.Commands.Delete;
+﻿using Microsoft.AspNetCore.Mvc;
+using SIMA.Universitas.Application.Features.Brands.Commands.Create;
+using SIMA.Universitas.Application.Features.Brands.Commands.Delete;
+using SIMA.Universitas.Application.Features.Brands.Commands.Update;
 using SIMA.Universitas.Application.Features.Brands.Queries.GetAllCached;
 using SIMA.Universitas.Application.Features.Brands.Queries.GetById;
-using Microsoft.AspNetCore.Mvc;
-using SIMA.Universitas.Application.Features.Brands.Commands.Create;
-using SIMA.Universitas.Application.Features.Brands.Commands.Update;
 using SIMA.Universitas.Web.Abstractions;
 using SIMA.Universitas.Web.Areas.Catalog.Models;
 using System.Collections.Generic;

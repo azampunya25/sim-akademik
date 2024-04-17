@@ -10,7 +10,6 @@ using SIMA.Universitas.Application.Interfaces.Shared;
 using SIMA.Universitas.Infrastructure.DbContexts;
 using SIMA.Universitas.Infrastructure.Identity.Models;
 using SIMA.Universitas.Shared.Services;
-using SIMA.Universitas.Web;
 using SIMA.Universitas.Web.Services;
 using System.Collections.Generic;
 using System.Globalization;

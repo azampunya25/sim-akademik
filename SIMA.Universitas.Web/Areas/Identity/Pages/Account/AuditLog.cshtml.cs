@@ -1,13 +1,11 @@
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SIMA.Universitas.Application.DTOs.Logs;
+using SIMA.Universitas.Application.Features.Logs.Queries.GetCurrentUserLogs;
 using SIMA.Universitas.Application.Interfaces.Shared;
 using SIMA.Universitas.Web.Abstractions;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using SIMA.Universitas.Application.Features.Logs.Queries.GetCurrentUserLogs;
 
 namespace SIMA.Universitas.Web.Areas.Identity.Pages.Account
 {

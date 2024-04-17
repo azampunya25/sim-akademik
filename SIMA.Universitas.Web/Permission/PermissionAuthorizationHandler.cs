@@ -1,6 +1,4 @@
-﻿using SIMA.Universitas.Infrastructure.Identity.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
 using SIMA.Universitas.Application.Constants;
 using System.Linq;
 using System.Threading.Tasks;

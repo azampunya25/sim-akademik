@@ -1,6 +1,5 @@
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
-using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -50,7 +49,7 @@ namespace SIMA.Universitas.Web
             services.AddControllersWithViews().AddFluentValidation(fv =>
             {
                 fv.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-                fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+                //fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
             });
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddDistributedMemoryCache();

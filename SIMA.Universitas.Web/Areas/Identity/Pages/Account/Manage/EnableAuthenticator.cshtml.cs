@@ -146,7 +146,7 @@ namespace SIMA.Universitas.Web.Areas.Identity.Pages.Account.Manage
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("SIMA.Universitas.Web"),
+                _urlEncoder.Encode("AspNetCoreHero.Boilerplate.Web"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

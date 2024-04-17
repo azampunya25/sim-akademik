@@ -1,14 +1,14 @@
-﻿using SIMA.Universitas.Application.DTOs.Mail;
-using SIMA.Universitas.Application.Exceptions;
-using AspNetCoreHero.Results;
+﻿using AspNetCoreHero.Results;
 using AspNetCoreHero.ThrowR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using SIMA.Universitas.Application.DTOs.Identity;
+using SIMA.Universitas.Application.DTOs.Mail;
 using SIMA.Universitas.Application.DTOs.Settings;
 using SIMA.Universitas.Application.Enums;
+using SIMA.Universitas.Application.Exceptions;
 using SIMA.Universitas.Application.Interfaces;
 using SIMA.Universitas.Application.Interfaces.Shared;
 using SIMA.Universitas.Infrastructure.Identity.Models;

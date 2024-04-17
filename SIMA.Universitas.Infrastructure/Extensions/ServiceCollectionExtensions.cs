@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SIMA.Universitas.Application.Interfaces.CacheRepositories;
 using SIMA.Universitas.Application.Interfaces.Contexts;
@@ -7,7 +6,6 @@ using SIMA.Universitas.Application.Interfaces.Repositories;
 using SIMA.Universitas.Infrastructure.CacheRepositories;
 using SIMA.Universitas.Infrastructure.DbContexts;
 using SIMA.Universitas.Infrastructure.Repositories;
-using System.Reflection;
 
 namespace SIMA.Universitas.Infrastructure.Extensions
 {

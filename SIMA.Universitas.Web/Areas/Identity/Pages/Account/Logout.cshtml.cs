@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SIMA.Universitas.Application.Features.Logs.Commands.AddActivityLog;
 using SIMA.Universitas.Application.Interfaces.Shared;
 using SIMA.Universitas.Infrastructure.Identity.Models;
 using SIMA.Universitas.Web.Abstractions;
 using System.Threading.Tasks;
-using SIMA.Universitas.Application.Features.Logs.Commands.AddActivityLog;
 
 namespace SIMA.Universitas.Web.Areas.Identity.Pages.Account
 {

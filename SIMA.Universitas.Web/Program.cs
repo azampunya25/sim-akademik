@@ -5,7 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SIMA.Universitas.Infrastructure.Identity.Models;
-using SIMA.Universitas.Infrastructure.Identity.Seeds;
 using System;
 using System.Threading.Tasks;
 
@@ -27,9 +26,9 @@ namespace SIMA.Universitas.Web
                     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
-                    await DefaultRoles.SeedAsync(userManager, roleManager);
-                    await DefaultSuperAdminUser.SeedAsync(userManager, roleManager);
-                    await DefaultBasicUser.SeedAsync(userManager, roleManager);
+                    await Infrastructure.Identity.Seeds.DefaultRoles.SeedAsync(userManager, roleManager);
+                    await Infrastructure.Identity.Seeds.DefaultSuperAdminUser.SeedAsync(userManager, roleManager);
+                    await Infrastructure.Identity.Seeds.DefaultBasicUser.SeedAsync(userManager, roleManager);
                     logger.LogInformation("Finished Seeding Default Data");
                     logger.LogInformation("Application Starting");
                 }

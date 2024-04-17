@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SIMA.Universitas.Infrastructure.Identity.Models;
-using SIMA.Universitas.Infrastructure.Identity.Seeds;
 using SIMA.Universitas.Web.Abstractions;
 using SIMA.Universitas.Web.Areas.Admin.Models;
 using System.Collections.Generic;
@@ -63,7 +62,7 @@ namespace SIMA.Universitas.Web.Areas.Admin.Controllers
             result = await _userManager.AddToRolesAsync(user, model.UserRoles.Where(x => x.Selected).Select(y => y.RoleName));
             var currentUser = await _userManager.GetUserAsync(User);
             await _signInManager.RefreshSignInAsync(currentUser);
-            await DefaultSuperAdminUser.SeedAsync(_userManager, _roleManager);
+            await Infrastructure.Identity.Seeds.DefaultSuperAdminUser.SeedAsync(_userManager, _roleManager);
             _notify.Success($"Updated Roles for User '{user.Email}'");
             return RedirectToAction("Index", new { userId = id });
         }

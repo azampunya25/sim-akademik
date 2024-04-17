@@ -1,6 +1,6 @@
-﻿using SIMA.Universitas.Application.Exceptions;
-using AspNetCoreHero.Results;
+﻿using AspNetCoreHero.Results;
 using MediatR;
+using SIMA.Universitas.Application.Exceptions;
 using SIMA.Universitas.Application.Interfaces.Repositories;
 using System.Threading;
 using System.Threading.Tasks;
