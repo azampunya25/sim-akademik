@@ -45,14 +45,14 @@ namespace SIMA.Universitas.Infrastructure.DbContexts
                         break;
                 }
             }
-            if (_authenticatedUser.UserId == null)
-            {
-                return await base.SaveChangesAsync(cancellationToken);
-            }
-            else
-            {
-                return await base.SaveChangesAsync(_authenticatedUser.UserId);
-            }
+            //if (_authenticatedUser.UserId == null)
+            //{
+             return await base.SaveChangesAsync(cancellationToken);
+            //}
+            //else
+            //{
+            //    return await base.SaveChangesAsync(_authenticatedUser.UserId);
+            //}
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
